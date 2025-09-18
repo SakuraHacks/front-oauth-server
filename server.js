@@ -32,6 +32,12 @@ app.get("/authorize", (req, res) => {
   // Redirect back to Front with code + state
   res.redirect(`${redirect_uri}?code=${code}&state=${state}`);
 });
+// ---------------- REDIRECT URL ------------------
+
+app.get("/callback", (req, res) => {
+  console.log("Callback hit with query params:", req.query);
+  res.send("Authorization complete! You can close this window.");
+});
 
 // ---------------- TOKEN ENDPOINT ----------------
 app.post("/token", (req, res) => {
@@ -79,3 +85,5 @@ app.post("/token", (req, res) => {
 app.listen(3000, () => {
   console.log("OAuth server running at http://localhost:3000");
 });
+
+//

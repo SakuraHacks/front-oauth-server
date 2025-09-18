@@ -11,8 +11,8 @@ const authCodes = new Map();
 const tokens = new Map();
 
 // Fake client & user (replace with your logic)
-const CLIENT_ID = "front-client-id";
-const CLIENT_SECRET = "front-client-secret";
+const CLIENT_ID = "c46ef6b0f2c305936119";
+const CLIENT_SECRET = "ef956a9354265df8ecbf1e5d881ec8ad802b490f";
 const REDIRECT_URI = "https://app.frontapp.com/oauth/callback";
 
 // ---------------- AUTHORIZATION ENDPOINT ----------------
